@@ -10,6 +10,7 @@
   font-size: 14px;
   font-weight: bold;
   border-bottom: 1px solid black;
+  top: 0;
 }
 
 .logo {
@@ -35,7 +36,6 @@
 }
 
 nav span {
-  display: inline-block;
   padding: 20px 10px;
 }
 
@@ -47,41 +47,52 @@ body {
   margin: 0;
 }
 
-/*remove later*/
+/*remove later
 .countainer,
 .column,
 .headline,
 .story {
   border: 1px solid black;
-}
+} */
 
 .container,
-.column {
+.column,
+.stories {
   display: flex;
 }
 
 .container {
-  position: absolute;
   margin-top: 90px;
   margin-bottom: 78px;
   width: 100%;
   justify-content: space-around;
 }
 
-.column {
+.column,
+.story.part1,
+.story.part2 {
   flex-direction: column;
 }
 
 .column.large {
-  width: 630px;
+  width: 660px;
 }
 
+.stories {
+  align-items: center;
+  justify-content: center;
+}
+
+.story.part1,
+.story.part2 {
+  padding: 10px 20px;
+}
 .column.medium {
-  width: 300px;
+  width: 330px;
 }
 
 .column.small {
-  width: 240px;
+  width: 270px;
 }
 
 .one {
@@ -120,4 +131,64 @@ p {
 .headline {
   display: flex;
   height: auto;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+h1.newbite {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin: 16px 0;
+  padding: 20px 0;
+}
+
+.bite {
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  padding: 11px 20px;
+  margin: 0;
+  border-bottom: 1px solid black;
+}
+
+.footer {
+  display: flex;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 325px;
+  margin: auto;
+  position: relative;
+}
+
+.title {
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  padding-right: 30px;
+  border-right: 2px solid white;
+}
+
+.footer nav {
+  display: inline-block;
+  padding-left: 30px;
+}
+
+.copyright p {
+  font-family: Verdana;
+  font-size: 12px;
 }
